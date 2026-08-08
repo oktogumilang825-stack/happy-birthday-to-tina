@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Tina 💗</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    font-family:Arial,sans-serif; color:#5b4050;
+    background:linear-gradient(135deg,#ffe8f1,#f8eaff,#e8f2ff);
+    overflow:hidden;
+  }
+  .card{
+    width:min(92%,430px); padding:32px 24px; text-align:center;
+    background:rgba(255,255,255,.72); border:1px solid rgba(255,255,255,.9);
+    border-radius:28px; box-shadow:0 15px 45px rgba(120,80,120,.18);
+    backdrop-filter:blur(10px); position:relative;
+  }
+  .heart{font-size:48px; animation:float 2.5s ease-in-out infinite}
+  h1{margin:8px 0;color:#d86b9b;font-size:38px}
+  h2{margin:4px 0 18px;font-size:22px}
+  p{line-height:1.65;font-size:16px}
+  .age{display:inline-block;margin:8px 0 16px;padding:8px 18px;border-radius:99px;background:#fff0f6;color:#cf5f91;font-weight:bold}
+  button{
+    border:0;border-radius:999px;padding:13px 22px;margin-top:10px;
+    background:#d86b9b;color:white;font-size:15px;font-weight:bold;cursor:pointer;
+    box-shadow:0 8px 18px rgba(216,107,155,.25)
+  }
+  #message{display:none;margin-top:18px;padding:16px;border-radius:18px;background:#fff7fb}
+  .small{font-size:13px;opacity:.75;margin-top:20px}
+  @keyframes float{50%{transform:translateY(-8px)}}
+  .spark{position:absolute;font-size:20px;opacity:.65}
+  .s1{top:15px;left:22px}.s2{top:30px;right:25px}.s3{bottom:20px;left:25px}.s4{bottom:28px;right:25px}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="spark s1">✦</div><div class="spark s2">♡</div>
+    <div class="spark s3">✧</div><div class="spark s4">♡</div>
+    <div class="heart">🎂</div>
+    <h1>Happy Birthday!</h1>
+    <h2>Selamat ulang tahun, Timoy 💗</h2>
+    <div class="age">16 tahun • 9 Agustus 🎀</div>
+    <p>
+      Makin tua aja yaa 😭🎂<br>
+      Gak kebayang besok udah bikin KTP kan hehe.
+    </p>
+    <p>
+      Maaf ya aku cuma bisa kirim ini buat kamu soalnya aku bingung,
+      lagi pusing banget hari ini banyak kerkom. Tapi kamu selalu ada kok diingatan aku.
+      Walaupun aku udah gak bisa kesana, tapi aku janji kok aku bakal pulang lagi,
+      tapi gak akan bisa cepet. Aku juga harus sekolah disini. Aku gak ngechat kamu
+      karena aku tau kamu gak mau lagi dichat sama aku. Yaudahhh sampai sini aja ya. 💗
+    </p>
+    <button onclick="showMessage()">Pencet ini 🎁</button>
+    <div id="message">
+      <b>Pesan kecil 💌</b><br><br>
+      Jangan pikir aneh-aneh terus 😭💗
+    </div>
+    <div class="small">— someone 💗</div>
+  </main>
+<script>
+function showMessage(){
+  const m=document.getElementById("message");
+  m.style.display=m.style.display==="block"?"none":"block";
+}
+</script>
+</body>
+</html>
